@@ -5,7 +5,7 @@ void ft_print_alphabet(void)
     write(1, "abcdefghijklmnopqrstuvwxyz", 27);
 }
 
-int main()
-{
-    ft_print_alphabet();
-}
+// int main()
+// {
+//     ft_print_alphabet();
+// }
