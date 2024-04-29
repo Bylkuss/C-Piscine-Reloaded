@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_display_file.c                                  :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: loadjou <loadjou@student.42quebec.com>     +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2024/04/29 13:12:07 by loadjou           #+#    #+#             */
+/*   Updated: 2024/04/29 13:16:43 by loadjou          ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include <fcntl.h>
 #include <sys/types.h>
 #include <sys/uio.h>
@@ -14,7 +26,7 @@ void	ft_putchar(char c, int fd)
 
 void	ft_putstr(char *str, int fd)
 {
-	int i;
+	int	i;
 
 	i = 0;
 	while (str[i] != '\0')
@@ -24,7 +36,7 @@ void	ft_putstr(char *str, int fd)
 	}
 }
 
-int		main(int argc, char **argv)
+int	main(int argc, char **argv)
 {
 	int		file_open;
 	int		buf_rec;
@@ -41,10 +53,12 @@ int		main(int argc, char **argv)
 			ft_putstr("Cannot read file.\n", STANDARD_ERR);
 		else
 		{
-			while ((buf_rec = read(file_open, buffer, BUF_SIZE)))
+			buf_rec = read(file_open, buffer, BUF_SIZE);
+			while (buf_rec)
 			{
 				buffer[buf_rec] = '\0';
 				ft_putstr(buffer, STANDARD_OUTPUT);
+				buf_rec = read(file_open, buffer, BUF_SIZE);
 			}
 		}
 	}

@@ -1,7 +1,19 @@
-int        ft_iterative_factorial(int nb)
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_iterative_factorial.c                           :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: loadjou <loadjou@student.42quebec.com>     +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2024/04/29 13:06:01 by loadjou           #+#    #+#             */
+/*   Updated: 2024/04/29 13:06:05 by loadjou          ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
+int	ft_iterative_factorial(int nb)
 {
-        int i;
-	int result;
+	int	i;
+	int	result;
 
 	i = 1;
 	result = 1;

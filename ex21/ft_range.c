@@ -1,9 +1,21 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_range.c                                         :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: loadjou <loadjou@student.42quebec.com>     +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2024/04/29 13:09:30 by loadjou           #+#    #+#             */
+/*   Updated: 2024/04/29 13:09:31 by loadjou          ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include <stdlib.h>
 
-int		*ft_range(int min, int max)
+int	*ft_range(int min, int max)
 {
-	int i;
-	int *res;
+	int	i;
+	int	*res;
 
 	if (min >= max)
 		return (0);
