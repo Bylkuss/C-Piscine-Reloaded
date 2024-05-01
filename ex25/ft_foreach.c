@@ -6,7 +6,7 @@
 /*   By: loadjou <loadjou@student.42quebec.com>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/29 13:11:36 by loadjou           #+#    #+#             */
-/*   Updated: 2024/04/29 13:11:45 by loadjou          ###   ########.fr       */
+/*   Updated: 2024/05/01 14:43:11 by loadjou          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,10 +14,13 @@ void	ft_foreach(int *tab, int length, void (*f)(int))
 {
 	int	i;
 
-	i = 0;
-	while (i < length)
+	if (f)
 	{
-		f(tab[i]);
-		i++;
+		i = 0;
+		while (i < length)
+		{
+			f(tab[i]);
+			i++;
+		}
 	}
 }

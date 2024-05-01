@@ -6,11 +6,14 @@
 /*   By: loadjou <loadjou@student.42quebec.com>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/29 13:05:04 by loadjou           #+#    #+#             */
-/*   Updated: 2024/04/29 13:05:06 by loadjou          ###   ########.fr       */
+/*   Updated: 2024/05/01 11:52:53 by loadjou          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include <unistd.h>
+
 void	ft_ft(int *nbr)
 {
-	*nbr = 42;
+	if (nbr)
+		*nbr = 42;
 }

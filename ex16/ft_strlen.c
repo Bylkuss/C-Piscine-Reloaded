@@ -6,7 +6,7 @@
 /*   By: loadjou <loadjou@student.42quebec.com>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/29 13:07:57 by loadjou           #+#    #+#             */
-/*   Updated: 2024/04/29 13:08:00 by loadjou          ###   ########.fr       */
+/*   Updated: 2024/05/01 12:26:05 by loadjou          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@ int	ft_strlen(char *str)
 	int	len;
 
 	len = 0;
-	while (str[len])
+	while (str && str[len])
 		len++;
 	return (len);
 }

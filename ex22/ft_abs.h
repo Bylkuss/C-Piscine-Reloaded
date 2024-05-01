@@ -6,19 +6,13 @@
 /*   By: loadjou <loadjou@student.42quebec.com>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/29 13:09:37 by loadjou           #+#    #+#             */
-/*   Updated: 2024/04/29 13:11:16 by loadjou          ###   ########.fr       */
+/*   Updated: 2024/05/01 13:33:31 by loadjou          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef FT_ABS_H
 # define FT_ABS_H
 
-int	ft_abs(int value)
-{
-	if (value >= 0)
-		return (value);
-	else
-		return (-value);
-}
+#define ABS(Value) (Value < 0) ? -Value : Value
 
 #endif

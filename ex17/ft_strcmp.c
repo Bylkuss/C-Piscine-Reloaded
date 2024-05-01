@@ -6,7 +6,7 @@
 /*   By: loadjou <loadjou@student.42quebec.com>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/29 13:08:07 by loadjou           #+#    #+#             */
-/*   Updated: 2024/04/29 13:08:24 by loadjou          ###   ########.fr       */
+/*   Updated: 2024/05/01 14:24:30 by loadjou          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,8 @@ int	ft_strcmp(char *s1, char *s2)
 {
 	int	i;
 
+	if (!(s1 && s2))
+		return (-500);
 	i = 0;
 	while ((s1[i] && s2[i]) && (s1[i] == s2[i]))
 	{

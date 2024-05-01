@@ -6,13 +6,16 @@
 /*   By: loadjou <loadjou@student.42quebec.com>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/29 13:08:46 by loadjou           #+#    #+#             */
-/*   Updated: 2024/04/29 13:09:07 by loadjou          ###   ########.fr       */
+/*   Updated: 2024/05/01 14:35:34 by loadjou          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
 
-void	ft_putchar(char c);
+void	ft_putchar(char c)
+{
+	write(1, &c, 1);
+}
 
 int	ft_strcmp(char *s1, char *s2)
 {

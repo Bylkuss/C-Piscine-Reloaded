@@ -6,11 +6,16 @@
 /*   By: loadjou <loadjou@student.42quebec.com>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/29 13:01:33 by loadjou           #+#    #+#             */
-/*   Updated: 2024/04/29 16:46:43 by loadjou          ###   ########.fr       */
+/*   Updated: 2024/05/01 12:58:05 by loadjou          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-void	ft_putchar(char c);
+#include <unistd.h>
+
+void	ft_putchar(char c)
+{
+	write(1, &c, 1);
+}
 
 void	ft_print_numbers(void)
 {

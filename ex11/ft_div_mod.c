@@ -6,12 +6,15 @@
 /*   By: loadjou <loadjou@student.42quebec.com>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/29 13:05:47 by loadjou           #+#    #+#             */
-/*   Updated: 2024/04/29 13:05:52 by loadjou          ###   ########.fr       */
+/*   Updated: 2024/05/01 12:34:30 by loadjou          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 void	ft_div_mod(int a, int b, int *div, int *mod)
 {
-	*div = a / b;
-	*mod = a % b;
+	if (div && mod)
+	{
+		*div = a / b;
+		*mod = a % b;
+	}
 }
